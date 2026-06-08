@@ -1,0 +1,12 @@
+[Unit]
+Description=FRO Metrics Collector
+After=network.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/usr/bin/env python3 /opt/fro/daemon/metrics_collector.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

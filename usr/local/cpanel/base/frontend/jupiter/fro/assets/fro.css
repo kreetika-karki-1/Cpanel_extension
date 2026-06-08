@@ -1,0 +1,10 @@
+/* fro.css - minimal styles matching Jupiter neutral palette */
+
+.fro-badge { padding:6px;border-radius:4px;color:#fff }
+
+/* colors: #293a4a, #f8f9fa, #e9ecef */
+
+.container { font-family: Arial, Helvetica, sans-serif; color:#293a4a }
+
+.btn { display:inline-block; padding:6px 10px; border-radius:4px; text-decoration:none }
+
