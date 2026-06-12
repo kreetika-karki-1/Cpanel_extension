@@ -1,0 +1,13 @@
+[Unit]
+Description=FRO File Integrity Watcher
+After=network.target
+
+[Service]
+User=fro
+Group=fro
+ExecStart=/usr/bin/env python3 /opt/fro/daemon/fim_watcher.py
+Restart=on-failure
+Nice=10
+
+[Install]
+WantedBy=multi-user.target
